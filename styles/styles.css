@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: gwhite;
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.disapper1 {
+    display: none;
+}
+
+/* NAVIGATION */
+
+header {
+    background-image: url("../one-magazine-assets/image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: white;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 150px;
+    font-style: italic;
+    line-height: 120px;
+}
+
+.nav_gallary {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    bottom: 20px
+}
+
+.nav_gallary li {
+    padding: 5px;
+    color: white;
+}
+
+nav li {
+    padding-left: 30px;
+}
+
+.nav_para {
+    font-size: 35px;
+}
+
+/* SECTION ONE */
+.section_one_h2 {
+    text-align: center;
+    margin: 80px
+}
+
+h2 {
+    font-size: 49px;
+}
+
+.section_one_imgs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* SECTION TWO */
+
+
+.section_two {
+    display: flex;
+}
+
+.section_two_image {
+    width: 300px;
+    margin-top: 100px;
+}
+
+.section_two_button {
+    margin-top: 95px;
+    margin-left: 30px;
+    width: 70%;
+}
+
+button {
+    font-size: 18px;
+    background-color: #183399;
+    color: white;
+    padding: 16px;
+}
+
+.button_one {
+    margin-top: 8px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.section_two_para {
+    margin-bottom: 12px;
+}
+
+/* SECTION THREE */
+
+.section_three_df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.wrapper1 {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section_three_para {
+    width: 50%;
+    padding: 0 7%;
+}
+
+.section_three_image {
+    width: 50%;
+
+}
+
+.section_three_button {
+    margin-top: 20px;
+}
+
+
+/* SECTION FOUR */
+.section_four_df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section_four_para {
+    width: 50%;
+    padding: 0 7%;
+}
+
+.section_four_image {
+    width: 50%
+}
+
+.section_four_button {
+    margin-top: 18px;
+}
+
+
+/* SECTION 5 */
+
+.section_five_list {
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 50px
+}
+
+.section_five {
+    background-image: url("../one-magazine-assets/image-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.image_name {
+    margin-top: 10px;
+}
+
+/* SECTION 6*/
+
+.grey {
+    background-color: #e3e3e3;
+}
+
+.section_six {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+
+}
+
+.section_six_df {
+    display: flex;
+}
+
+.button_black {
+    background-color: black;
+}
+
+input[type="email"] {
+    height: 55px;
+    font-size: 20px;
+    width: 450px;
+}
+
+/* FOOTER */
+
+.darkgrey {
+    background-color: grey;
+    text-align: center;
+}
+
+@media (max-width: 728px) {
+
+    nav,
+    .nav_gallary {
+        display: none;
+    }
+
+    .disapper1 {
+        display: block;
+        font-size: 45px;
+        position: absolute;
+        right: 5px
+    }
+
+    .section_two {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .section_three_df {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .section_four_df {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section_five_list {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+
+    }
+
+    .section_six_first {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section_six_df {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .disapper {
+        display: none;
+    }
+
+    .section_one_imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .button_black,
+    input {
+        width: 100% !important;
+    }
+
+
+
+}
